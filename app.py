@@ -27,7 +27,7 @@ with st.form("prediction_form"):
     Bedrooms = st.selectbox("🛏️ Choose Number of Bedrooms", options=['1', '2', '3', '4', '5'])
     Bathrooms = st.selectbox("🛁 Choose Number of Bathrooms", options=['1', '2', '3', '4', '5'])
     neighborhood = st.selectbox("📍 Select Your Preferred Neighborhood", options=list(Encodings['Neighborhood'].keys()))
-    YearBuilt = st.slider("🏗️ Select Year Built", min_value=1900, max_value=2025, step=1)
+    YearBuilt = st.slider("🏗️ Select Year Built", min_value=2000, max_value=2025, step=1)
 
     submitted = st.form_submit_button('🔍 Predict Price')
 
